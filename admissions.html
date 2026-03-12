@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | IIT Dholakpur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="emergency-marquee">
+        <div class="marquee-content">
+            🚨 Notice: Daku Mangal Singh spotted near the main gate. All end-semester exams have been postponed indefinitely. Please secure your laddoo rations immediately. 🚨
+        </div>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                IIT Dholakpur
+                <span>Excellence in Laddoos</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="faculty.html">Faculty & Staff</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <div class="theme-toggle-container">
+                    <span>☀️</span>
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>🌙</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title">Admissions</h1>
+            
+            <div class="card" style="margin-bottom: 4rem; max-width: 800px; margin-inline: auto;">
+                <h3>Admission Criteria (Batch of 2026-2030)</h3>
+                <ul style="margin-left: 1.5rem; color: var(--text-muted); font-size: 1.15rem; line-height: 2;">
+                    <li>Must be able to defeat exactly 3 goons at once without breaking a sweat.</li>
+                    <li>Minimum 99.9% marks in Dholakpur Higher Secondary Boards.</li>
+                    <li>Proof of immunity against generic hypnosis spells (e.g., from Damyaan).</li>
+                    <li>Must pass the physical test of carrying equivalent body weight in laddoos for 5 kilometers.</li>
+                    <li>Valid recommendation letter from Raja Indraverma (Optional but practically mandatory).</li>
+                </ul>
+            </div>
+
+            <div class="form-container" id="form-container-box">
+                <h3 style="color: var(--accent-col); font-size: 2rem; margin-bottom: 2.5rem; text-align: center;">B.Tech Application Form</h3>
+                <form id="admission-form-v2">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="e.g. Bholu">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" required placeholder="Must be at least physically somewhat capable">
+                    </div>
+                    <div class="form-group">
+                        <label for="weapon">Favorite Weapon of Choice</label>
+                        <select id="weapon" required>
+                            <option value="">Select an arsenal...</option>
+                            <option value="bare-hands">Bare Hands (Bheem Style)</option>
+                            <option value="slingshot">Raju's Slingshot</option>
+                            <option value="bow">Arjun's Bow</option>
+                            <option value="dholak">A Literal Dholak</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="laddus">Average Laddu Consumption Per Day</label>
+                        <input type="number" id="laddus" required placeholder="Be honest, we check your blood sugar">
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; font-size: 1.2rem; padding: 1.2rem;">Generate My Identity</button>
+                </form>
+            </div>
+
+            <!-- Loading Spinner (Hidden by default) -->
+            <div class="spinner-container" id="spinner-container">
+                <div class="spinner"></div>
+                <div class="spinner-text">Processing Admission securely via Dholakpur Intranet...</div>
+            </div>
+
+            <!-- Generated ID Card (Hidden by default) -->
+            <div class="id-card-container" id="id-card-container">
+                <div class="id-card">
+                    <div class="id-header">IIT DHOLAKPUR OFFICIAL ID</div>
+                    <div class="id-photo-placeholder">🤠</div>
+                    <div class="id-details">
+                        <div class="id-name" id="id-name-display">Name Here</div>
+                        <div class="id-meta" id="id-roll-display">Roll No: XXXX</div>
+                        <div class="id-meta" id="id-hostel-display">Hostel: XXXX</div>
+                        <div class="id-meta" style="margin-top: 1rem; color: var(--accent-col); font-size: 0.9rem; border-top: 1px dashed rgba(255,255,255,0.2); padding-top: 1rem;">
+                            Valid until Kirmada's next attack.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Report Kalia Modal -->
+    <div class="modal-overlay" id="report-modal">
+        <div class="modal-content report-modal-content">
+            <span class="modal-close" id="report-modal-close">&times;</span>
+            <div class="report-icon">🚨</div>
+            <h3 class="modal-title" style="color: var(--danger);">Incident Reported</h3>
+            <p class="modal-body">Thank you for your vigilance. Chhota Bheem has been dispatched to your location with immediate effect. Please remain calm and secure your laddoo rations.</p>
+            <button class="btn" id="report-modal-ok" style="margin-top: 2rem; width: 100%;">Understood</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>123 Royal Palace Road</p>
+                <p>Dholakpur, DP 00001</p>
+                <p>Email: admin@iitdholakpur.edu.dp</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="faculty.html">Faculty & Staff</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Security</h4>
+                <p>See someone suspicious stealing laddoos?</p>
+                <button class="report-btn">Report Kalia</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 IIT Dholakpur. All Fake Rights Reserved. Completely unhinged.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

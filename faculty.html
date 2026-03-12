@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty & Staff | IIT Dholakpur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="emergency-marquee">
+        <div class="marquee-content">
+            🚨 Notice: Daku Mangal Singh spotted near the main gate. All end-semester exams have been postponed indefinitely. Please secure your laddoo rations immediately. 🚨
+        </div>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                IIT Dholakpur
+                <span>Excellence in Laddoos</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="faculty.html" class="active">Faculty & Staff</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <div class="theme-toggle-container">
+                    <span>☀️</span>
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>🌙</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title">Distinguished Faculty & Staff</h1>
+            <p style="text-align: center; font-size: 1.25rem; color: var(--text-muted); margin-bottom: 5rem; max-width: 800px; margin-inline: auto;">Meet the brilliant minds and powerful entities shaping the future of Dholakpur. Our faculty consists of world-renowned specialists in Confectionery Dynamics, Ballistics, and Strategic Retreating.</p>
+            
+            <div class="grid-3">
+                <div class="card faculty-card">
+                    <div class="faculty-img-wrapper">
+                        <img src="assets/prof_chutki.png" alt="Prof. Chutki" class="faculty-img">
+                    </div>
+                    <h3>Prof. Chutki, PhD</h3>
+                    <p class="faculty-role">HOD, Department of Laddu Mechanics</p>
+                    <p class="faculty-desc">Pioneer in analyzing the structural integrity and aerodynamic trajectory of highly-concentrated sugar spheres. Often seen recalibrating Bheem's carbohydrate intake during critical mission phases.</p>
+                </div>
+                
+                <div class="card faculty-card">
+                    <div class="faculty-img-wrapper">
+                        <img src="assets/prof_arjun.png" alt="Prof. Arjun" class="faculty-img">
+                    </div>
+                    <h3>Prof. Arjun</h3>
+                    <p class="faculty-role">HOD, Archery & Ballistics</p>
+                    <p class="faculty-desc">A legend who teaches blindfolded target practice. Known for aggressively calm lectures and firing arrows to distribute graded mid-term papers to students directly at their desks.</p>
+                </div>
+                
+                <div class="card faculty-card">
+                    <div class="faculty-img-wrapper">
+                        <img src="assets/tun_tun_mausi.png" alt="Tun Tun Mausi" class="faculty-img">
+                    </div>
+                    <h3>Tun Tun Mausi</h3>
+                    <p class="faculty-role">Dean of Placements & Nutrition</p>
+                    <p class="faculty-desc">The financial backbone of the institute. Single-handedly guarantees 100% placement while managing the monopoly on campus dining through her prestigious globally recognized enterprise.</p>
+                </div>
+                
+                <div class="card faculty-card">
+                    <div class="faculty-img-wrapper">
+                        <img src="assets/guest_lecturer_raju.png" alt="Raju" class="faculty-img">
+                    </div>
+                    <h3>Raju</h3>
+                    <p class="faculty-role">Guest Lecturer</p>
+                    <p class="faculty-desc">Expert in miniature defense mechanisms and slingshot aerodynamics. Youngest faculty member to successfully publish a thesis on "Optimizing Trajectory via Rubber Band Tension Protocols".</p>
+                </div>
+                
+                <div class="card faculty-card">
+                    <div class="faculty-img-wrapper">
+                        <img src="assets/kalia_the_great.png" alt="Kalia" class="faculty-img">
+                    </div>
+                    <h3>Kalia (The Great)</h3>
+                    <p class="faculty-role">Head of Competitive Distractions (Unpaid)</p>
+                    <p class="faculty-desc">Self-appointed strategic mastermind. Specializes in real-world scenario testing by constantly attempting to sabotage student projects. Accompanied by his loyal TAs: Dholu & Bholu.</p>
+                </div>
+                
+                <div class="card faculty-card">
+                    <div class="faculty-img-wrapper">
+                        <img src="assets/chancellor_indraverma.png" alt="H.E. Raja Indraverma" class="faculty-img">
+                    </div>
+                    <h3>H.E. Raja Indraverma</h3>
+                    <p class="faculty-role">Chancellor & Supreme Benefactor</p>
+                    <p class="faculty-desc">Primarily responsible for allocating the Kingdom's gold towards research in advanced laddoo fortification. Occasionally drops in to assign students potentially life-threatening extracurricular tasks.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Report Kalia Modal -->
+    <div class="modal-overlay" id="report-modal">
+        <div class="modal-content report-modal-content">
+            <span class="modal-close" id="report-modal-close">&times;</span>
+            <div class="report-icon">🚨</div>
+            <h3 class="modal-title" style="color: var(--danger);">Incident Reported</h3>
+            <p class="modal-body">Thank you for your vigilance. Chhota Bheem has been dispatched to your location with immediate effect. Please remain calm and secure your laddoo rations.</p>
+            <button class="btn" id="report-modal-ok" style="margin-top: 2rem; width: 100%;">Understood</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>123 Royal Palace Road</p>
+                <p>Dholakpur, DP 00001</p>
+                <p>Email: admin@iitdholakpur.edu.dp</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="faculty.html">Faculty & Staff</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Security</h4>
+                <p>See someone suspicious stealing laddoos?</p>
+                <button class="report-btn">Report Kalia</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 IIT Dholakpur. All Fake Rights Reserved. Completely unhinged.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

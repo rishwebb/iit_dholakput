@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life | IIT Dholakpur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="emergency-marquee">
+        <div class="marquee-content">
+            🚨 Notice: Daku Mangal Singh spotted near the main gate. All end-semester exams have been postponed indefinitely. Please secure your laddoo rations immediately. 🚨
+        </div>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                IIT Dholakpur
+                <span>Excellence in Laddoos</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="campus-life.html" class="active">Campus Life</a></li>
+                    <li><a href="faculty.html">Faculty & Staff</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <div class="theme-toggle-container">
+                    <span>☀️</span>
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>🌙</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title">Campus Life</h1>
+            <p style="text-align: center; font-size: 1.25rem; color: var(--text-muted); margin-bottom: 5rem; max-width: 800px; margin-inline: auto;">Experience an unparalleled campus vibrancy. Our traditions are as rich as Tun Tun Mausi's recipe, offering extra-curricular activities ranging from high-stakes athletics to magical defense strategy sessions.</p>
+            
+            <div style="margin-bottom: 6rem;">
+                <h2 class="section-title section-title-left">Clubs & Societies</h2>
+                <div class="grid-3">
+                    <div class="card">
+                        <h3>Save Dholakpur Club (SDC)</h3>
+                        <p>The most active club on campus. Members meet twice a week to discuss strategies for the inevitable weekly attack by assorted demons, dacoits, and rival kingdoms.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Bull Racing Society</h3>
+                        <p>Join the adrenaline-pumped Bull Racing Society. We design aerodynamically optimal bullock carts using fluid mechanics. Helmets and life insurance are mandatory.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Anti-Kalia Task Force</h3>
+                        <p>An unofficial (yet highly funded) group dedicated to counter-pranking Kalia, Dholu, and Bholu. Secret handshakes and stealth training required for entry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 6rem;">
+                <h2 class="section-title section-title-left">Interactive Campus Map</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Click on a zone to learn more about the highly classified areas of the IIT Dholakpur campus.</p>
+                <div class="map-grid">
+                    <div class="map-zone zone-library" data-zone="library">Central Laddu Library (Zone 1)</div>
+                    <div class="map-zone zone-arena" data-zone="arena">Royal Mud Wrestling Arena (Zone 2)</div>
+                    <div class="map-zone zone-stash" data-zone="stash">Secret Laddu Stash (Zone 3)</div>
+                    <div class="map-zone zone-canteen" data-zone="canteen">Tun Tun Canteen (Zone 4)</div>
+                    <div class="map-zone zone-forest" data-zone="forest">Forbidden Dholakpur Forest (Zone 5)</div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="section-title section-title-left">World-Class Facilities</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1544605151-692ab6a5b6ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mud Wrestling Arena">
+                        <div class="gallery-overlay">Royal Mud Wrestling Arena</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Central Library">
+                        <div class="gallery-overlay">The Central Laddu Library</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="High-Speed Bullock Cart Parking">
+                        <div class="gallery-overlay">High-Speed Cart Parking</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Map Modal -->
+    <div class="modal-overlay" id="map-modal">
+        <div class="modal-content">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <h3 class="modal-title" id="modal-title">Zone Title</h3>
+            <p class="modal-body" id="modal-body">Zone description goes here...</p>
+        </div>
+    </div>
+
+    <!-- Report Kalia Modal -->
+    <div class="modal-overlay" id="report-modal">
+        <div class="modal-content report-modal-content">
+            <span class="modal-close" id="report-modal-close">&times;</span>
+            <div class="report-icon">🚨</div>
+            <h3 class="modal-title" style="color: var(--danger);">Incident Reported</h3>
+            <p class="modal-body">Thank you for your vigilance. Chhota Bheem has been dispatched to your location with immediate effect. Please remain calm and secure your laddoo rations.</p>
+            <button class="btn" id="report-modal-ok" style="margin-top: 2rem; width: 100%;">Understood</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>123 Royal Palace Road</p>
+                <p>Dholakpur, DP 00001</p>
+                <p>Email: admin@iitdholakpur.edu.dp</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="faculty.html">Faculty & Staff</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Security</h4>
+                <p>See someone suspicious stealing laddoos?</p>
+                <button class="report-btn">Report Kalia</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 IIT Dholakpur. All Fake Rights Reserved. Completely unhinged.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

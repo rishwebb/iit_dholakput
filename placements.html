@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placements | IIT Dholakpur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="emergency-marquee">
+        <div class="marquee-content">
+            🚨 Notice: Daku Mangal Singh spotted near the main gate. All end-semester exams have been postponed indefinitely. Please secure your laddoo rations immediately. 🚨
+        </div>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                IIT Dholakpur
+                <span>Excellence in Laddoos</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html" class="active">Placements</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="faculty.html">Faculty & Staff</a></li>
+                </ul>
+            </nav>
+            <div class="nav-right">
+                <div class="theme-toggle-container">
+                    <span>☀️</span>
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>🌙</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="section-title">Placements & Careers</h1>
+            <p style="text-align: center; font-size: 1.25rem; color: var(--text-muted); margin-bottom: 4rem; max-width: 800px; margin-inline: auto;">With a 100% placement record, graduates from IIT Dholakpur are highly sought after by top conglomerates across the Dholakpur Kingdom. We guarantee unparalleled packages evaluated strictly in Laddoo equivalents.</p>
+            
+            <h2 class="section-title section-title-left" style="font-size: 2rem;">Top Recruiters</h2>
+            <div class="recruiters-marquee">
+                <div class="recruiters-track">
+                    <div class="recruiter-logo">Tun Tun Mausi Sweets</div>
+                    <div class="recruiter-logo">Dholakpur Royal Guard</div>
+                    <div class="recruiter-logo">Pehelwan Dhaba</div>
+                    <div class="recruiter-logo">Botakpur Industries</div>
+                    <div class="recruiter-logo">Pehilwan Gym</div>
+                    <!-- Duplicate for infinite marquee effect -->
+                    <div class="recruiter-logo">Tun Tun Mausi Sweets</div>
+                    <div class="recruiter-logo">Dholakpur Royal Guard</div>
+                    <div class="recruiter-logo">Pehelwan Dhaba</div>
+                    <div class="recruiter-logo">Botakpur Industries</div>
+                    <div class="recruiter-logo">Pehilwan Gym</div>
+                </div>
+            </div>
+
+            <h2 class="section-title section-title-left">Alumni Testimonials</h2>
+            <div class="grid-3" style="margin-bottom: 5rem;">
+                <div class="card testimonial-card">
+                    <p>I studied Laddu Engineering and now I am the Lead Taster at Tun Tun Mausi's Global Enterprise. My TC (Total Compensation) is measured in daily premium laddu deliveries. IIT-D changed my life.</p>
+                    <div class="testimonial-author">- Dholu, Class of '24</div>
+                </div>
+                <div class="card testimonial-card">
+                    <p>The Archery & Ballistics department taught me everything. Sadly, I still get tied to a tree by Bheem every weekend, but at least I can accurately calculate the trajectory of my fall.</p>
+                    <div class="testimonial-author">- Kalia, Dropout</div>
+                </div>
+                <div class="card testimonial-card">
+                    <p>Thanks to the rigorous curriculum at IIT-D, I've successfully expanded my business to Pehelwanpur. The financial modeling course (calculating unpaid tabs effectively) was an absolute lifesaver.</p>
+                    <div class="testimonial-author">- Tun Tun Mausi, Honorary Doctorate</div>
+                </div>
+            </div>
+
+            <h2 class="section-title section-title-left">Interactive Salary Calculator</h2>
+            <div class="form-container" style="max-width: 650px; margin: 0 auto; display: flex; flex-direction: column;">
+                <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2.5rem; text-align: center;">Enter your expected graduating GPA to calculate your potential starting package at Tun Tun Mausi Sweets.</p>
+                
+                <form id="salary-calc-form" style="width: 100%;">
+                    <div class="form-group">
+                        <input type="number" id="gpa-input" step="0.1" min="0" max="10" required placeholder="Enter GPA (e.g., 8.5)" style="text-align: center; font-size: 1.5rem; letter-spacing: 2px;">
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; padding: 1.2rem; font-size: 1.25rem; display: flex; justify-content: center; align-items: center; gap: 0.8rem; margin: 0;">
+                        <span>💰</span> Calculate CTCL (Cost to Company Laddus)
+                    </button>
+                </form>
+                
+                <div class="calc-result-wrapper" id="calc-result" style="display: none;">
+                    <h4>Estimated Starting Package</h4>
+                    <div class="calc-package" id="calc-package">...</div>
+                </div>
+
+                <!-- Bribe Section -->
+                <div class="bribe-section">
+                    <h4 style="color: var(--accent-col); margin-bottom: 1rem; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;"><span>🤫</span> Top Secret Option</h4>
+                    <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 1.5rem;">Psst... Don't have a good GPA? You can always try bribing the Dean directly with the laddus you've earned from clicking.</p>
+                    <button id="bribe-tuntun-btn" class="bribe-btn" disabled>
+                        <span>Bribe Tun Tun Mausi</span>
+                        <span>Cost: <span id="bribe-cost-display">50</span> 🟠</span>
+                    </button>
+                    <div id="bribe-status" class="bribe-status-msg"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Report Kalia Modal -->
+    <div class="modal-overlay" id="report-modal">
+        <div class="modal-content report-modal-content">
+            <span class="modal-close" id="report-modal-close">&times;</span>
+            <div class="report-icon">🚨</div>
+            <h3 class="modal-title" style="color: var(--danger);">Incident Reported</h3>
+            <p class="modal-body">Thank you for your vigilance. Chhota Bheem has been dispatched to your location with immediate effect. Please remain calm and secure your laddoo rations.</p>
+            <button class="btn" id="report-modal-ok" style="margin-top: 2rem; width: 100%;">Understood</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>123 Royal Palace Road</p>
+                <p>Dholakpur, DP 00001</p>
+                <p>Email: admin@iitdholakpur.edu.dp</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="placements.html">Placements</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="faculty.html">Faculty & Staff</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Security</h4>
+                <p>See someone suspicious stealing laddoos?</p>
+                <button class="report-btn">Report Kalia</button>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 IIT Dholakpur. All Fake Rights Reserved. Completely unhinged.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
