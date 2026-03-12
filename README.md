@@ -80,7 +80,7 @@ No frameworks. No build step. Just a wonderfully dramatic static website.
 Because this is a static site, you can preview it locally in seconds:
 
 ```bash
-cd /home/runner/work/iit_dholakput/iit_dholakput
+cd iit_dholakput
 python3 -m http.server 8000
 ```
 
